@@ -1,0 +1,112 @@
+.frontpage{
+    width: 100%;
+    margin: 0px;
+    height: 100hv
+    ;
+ }
+ .midpage{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     margin-top: 25%;
+ 
+ }
+ .discover{
+ display: grid;
+ margin: auto;
+ }
+ .row2{
+     background-color: black;
+ 
+     
+ }
+ Container{
+     display: flex;
+     justify-content:space-between;
+ }
+ img{
+     width: 300px;
+     height: 300px;
+     margin: 20%;
+ }
+ .contactdiv{
+     width: 100%;
+     height: max-content;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* background-color: black; */
+     color: red;
+     text-align: center;
+ }
+ .contact1{
+     width: 50%;
+     /* background-color: red; */
+     text-align: center;
+ }
+ .contact2{
+     width: 50%;
+     /* background-color: green; */
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin: auto;
+     
+     
+ }
+ .contact2 input{
+     text-align: center;
+     text-decoration: none;
+     border-radius: 2px;
+     
+ }
+ @media (max-width:800){
+     .contactdiv{
+         flex-direction: row;
+     }
+ }
+ .contact2 submit{
+     cursor: pointer;
+ }
+ .chefdiv{
+     width: 100%;
+     background-color: black;
+ }
+ .chefdiv1{
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+ }
+ .chefdiv2{
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+ }
+ @media screen and (max-width:800px) {
+     .chefdiv1{
+         flex-direction: column;
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+         
+     }
+    
+     .chefdiv2{
+         flex-direction: column;
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+     }
+     .footerdiv{
+         flex-direction: column;
+         justify-content: center;
+     }
+     
+ }
+ .footerdiv{
+     display: flex;
+     justify-content: space-around;
+ }
