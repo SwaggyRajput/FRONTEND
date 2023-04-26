@@ -6,12 +6,13 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Link,to} from 'react-router-dom';
 
 function Navbarpage() {
   return (
     <Navbar bg="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#"style={{color:'aquamarine'}}>The Elite Engineers's</Navbar.Brand>
+        <Navbar.Brand href="/"style={{color:'aquamarine'}}>The Elite Engineers's</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -19,12 +20,12 @@ function Navbarpage() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1" style={{color:'aqua'}}>Home</Nav.Link>
-            <Nav.Link href="#action2" style={{color:'aqua'}}>About us</Nav.Link>
-            <Nav.Link href="#action1" style={{color:'aqua'}}>Menu</Nav.Link>
-            <Nav.Link href="#action2" style={{color:'aqua'}}>Our chef</Nav.Link>
-            <Nav.Link href="#action1" style={{color:'aqua'}}>Reservation</Nav.Link>
-            <Nav.Link href="#action2" style={{color:'aqua'}}>Contact us</Nav.Link>
+            <Link to="/" style={{color:'aqua',textDecoration:"none",marginLeft:"10px"}}>Home</Link>
+            <Link to="/AboutPage" style={{color:'aqua',textDecoration:"none",marginLeft:"10px"}}>About us</Link>
+            <Link to="/MenuPage" style={{color:'aqua',textDecoration:"none",marginLeft:"10px"}}>Menu</Link>
+            <Link to="/ChefPage" style={{color:'aqua',textDecoration:"none",marginLeft:"10px"}}>Our chef</Link>
+            <Link to="/ReservationPage" style={{color:'aqua',textDecoration:"none",marginLeft:"10px"}}>Reservation</Link>
+            <Link to="/ContactPage" style={{color:'aqua',textDecoration:"none",marginLeft:"10px"}}>Contact us</Link>
             {/* <NavDropdown title="Link" id="navbarScrollingDropdown"> */}
               {/* <NavDropdown.Item href="#action3">Action</NavDropdown.Item> */}
               {/* <NavDropdown.Item href="#action4">

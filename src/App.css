@@ -1,3 +1,4 @@
+
 .frontpage{
     width: 100%;
     margin: 0px;
@@ -16,11 +17,7 @@
  display: grid;
  margin: auto;
  }
- .row2{
-     background-color: black;
- 
-     
- }
+
  Container{
      display: flex;
      justify-content:space-between;
@@ -32,18 +29,21 @@
  }
  .contactdiv{
      width: 100%;
-     height: max-content;
      display: flex;
      justify-content: center;
      align-items: center;
-     /* background-color: black; */
+     background-color: black;
      color: red;
      text-align: center;
+    height: 1000px;
+    
  }
  .contact1{
      width: 50%;
      /* background-color: red; */
      text-align: center;
+     color: bisque;
+     
  }
  .contact2{
      width: 50%;
@@ -59,54 +59,179 @@
      text-align: center;
      text-decoration: none;
      border-radius: 2px;
+     padding-left: 10px;
+     padding-right: 10px;
      
  }
- @media (max-width:800){
-     .contactdiv{
-         flex-direction: row;
-     }
+ .contact2 submit{
+    border: 2px solid green;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
  }
+
  .contact2 submit{
      cursor: pointer;
  }
  .chefdiv{
      width: 100%;
+     margin-top: 0px;
      background-color: black;
+     color: antiquewhite;
  }
  .chefdiv1{
      display: flex;
      width: 100%;
-     justify-content: center;
+     justify-content: space-evenly;
      align-items: center;
  }
  .chefdiv2{
      display: flex;
      width: 100%;
-     justify-content: center;
+     justify-content: space-evenly;
      align-items: center;
  }
- @media screen and (max-width:800px) {
-     .chefdiv1{
-         flex-direction: column;
-         width: 100%;
-         justify-content: center;
-         align-items: center;
-         
-     }
-    
-     .chefdiv2{
-         flex-direction: column;
-         width: 100%;
-         justify-content: center;
-         align-items: center;
-     }
-     .footerdiv{
-         flex-direction: column;
-         justify-content: center;
-     }
-     
- }
+
  .footerdiv{
      display: flex;
      justify-content: space-around;
+     background-color: black;
+     color: antiquewhite;
+    height: 300px;
+    align-items: center;
+    
+  
  }
+
+.contactbgimg{
+    background-image: url("https://imgs.search.brave.com/RtRppcF-iqs2x6um2TmNDG0466OBjWu-of2YpFA5GEU/rs:fit:711:225:1/g:ce/aHR0cHM6Ly90c2Ux/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5o/MUp5eHA3VTVUOXJH/Y3RHZG9GcE93SGFF/OCZwaWQ9QXBp");
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+Link:hover{
+    color: aquamarine;
+}
+
+.home2{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    
+}
+.homediv1{
+width: 50%;
+}
+.homediv2{
+    width: 50%;
+}
+.quality{
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+    align-items: center;
+    color: antiquewhite;
+    height: 600px;
+    text-align: center;
+
+}
+.quality img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid burlywood;
+    border-radius: 100%;
+  
+}
+
+.menuname{
+    text-align: center;
+    background-color: black;
+    color: antiquewhite;
+
+}
+.tea{
+    background-color: blueviolet;
+}
+.reserve{
+    height: 400px;
+    /* background-color: black; */
+    color: antiquewhite;
+    text-align: center;
+    background-image: url("https://get.pxhere.com/photo/table-cafe-coffee-shop-wood-chair-interior-restaurant-bar-meal-furniture-room-interior-design-dining-room-1391899.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size:cover;
+    
+}
+.reservediv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: cadetblue;
+    height: 400px;
+}
+.reservebutton{
+   text-align:center;
+   display:block;
+   margin-top:20px;
+   margin:auto;
+   width:20%
+}
+
+.carddiv{
+    background-color: black;
+    width: 50% ;
+    height: 100px;
+}
+
+
+ @media screen and (max-width:800px) {
+    .contactdiv{
+        flex-direction: column;
+    }
+    .chefdiv1{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+   
+    .chefdiv2{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerdiv{
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        height: 700px;
+    }
+    .me-auto my-2 my-lg-0 Link{
+        margin-top: 10px;
+    }
+    .home2{
+        flex-direction: column;
+        
+    }
+   .midpage{
+    width: 300px;
+
+   }
+   .quality{
+    flex-direction: column;
+    height: max-content;
+   }
+   .reservediv{
+    flex-direction: column;
+    height: 550px;
+   }
+}
